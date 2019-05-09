@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.io.FileInputStream;
@@ -46,9 +47,18 @@ public class TestBase
             driver = new ChromeDriver(options);
 
         } else if (browserName.equals("FF")) {
-            System.setProperty("webdriver.gecko.driver", "/Users/naveenkhunteta/Documents/SeleniumServer/geckodriver");
+            System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
             driver = new FirefoxDriver();
+        } else if (browserName.equals("FF_headless")) {
+            System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
+            FirefoxOptions options = new FirefoxOptions();
+            options.addArguments("headless");
+            driver = new FirefoxDriver(options);
+
+
         }
+
+
 
         driver.manage().window().setSize(new Dimension(Integer.valueOf(prop.getProperty("WINDOW_WIDTH")), Integer.valueOf(prop.getProperty("WINDOW_HEIGHT"))));
         driver.manage().deleteAllCookies();

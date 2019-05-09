@@ -1,18 +1,8 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.util.List;
 
 import static org.testng.Assert.fail;
 
@@ -22,7 +12,7 @@ public class TestPage extends TestBase {
     @BeforeMethod
     public void setUp() {
         initialization();
-        HomePage = new HomePage();
+       // HomePage = new HomePage();
     }
 
     //@Test(priority=1)
@@ -35,12 +25,12 @@ public class TestPage extends TestBase {
     }
 
 
-    public void lastRound() {
+  //  public void lastRound() {
         //  String url_start = "https://www.bundesnetzagentur.de/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OeffentlicheNetze/Mobilfunknetze/mobilfunknetze-node.htm";
-        String such = "//div[@class='singleview'][1]/h3[1]/text()[1]";
+   //     String such = "//div[@class='singleview'][1]/h3[1]/text()[1]";
         //  driver.get(url_start);
-        System.out.printf("\n Finde nexte Runde: %s ", driver.findElement(By.xpath(such)).getText());
-    }
+   //     System.out.printf("\n Finde nexte Runde: %s ", driver.findElement(By.xpath(such)).getText());
+   // }
 
     @Test(priority = 2)
     public void read_HTML() {

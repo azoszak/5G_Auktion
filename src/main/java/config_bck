@@ -1,0 +1,11 @@
+#Update
+#Wed May 08 12:48:45 CEST 2019
+url=https\://www.bundesnetzagentur.de/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OeffentlicheNetze/Mobilfunknetze/mobilfunknetze-node.html
+url_html=https\://www.bundesnetzagentur.de/_tools/FrequenzXml/Auktion2019_XML/113.html
+Start_Round=296
+username=admin
+WINDOW_WIDTH=400
+browser=Chrome
+WINDOW_HEIGHT=600
+url_tmp=https\://www.bundesnetzagentur.de/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OeffentlicheNetze/Mobilfunknetze/mobilfunknetze-node.html
+password=\!NCS2019
